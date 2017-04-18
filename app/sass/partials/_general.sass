@@ -1,16 +1,38 @@
+$accent: #df1f26
+
+=linear-gradient($color1)  
+ background-image: linear-gradient(to bottom, lighten($color1, 10%) 0%, darken($color1, 10%) 100%)
+
+=label($name)
+  position: absolute
+  top: 0
+  left: 0
+  width: 98px
+  height: 123px
+  background: url(../img/label-#{$name}.png)
+
 body
 	background: #eee
 	font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif
-	
 
+.container
+	max-width: 955px
+	margin: 0 auto
+	width: 100%	
+
+.main
+	display: flex
+	// flex-wrap: wrap
+	.sidebar
+		flex-basis: 27.3%
+		border-right: 1px solid #bebebe
+	.content
+		flex-basis: 80%
 .btn 
 	color: #fff
-	background: red
+	+linear-gradient($accent)
 	border-radius: 3px
 	display: inline-block
 	padding: 10px 20px
 	text-decoration: none
 	text-transform: uppercase
-
-.content
-	max-width: 900px

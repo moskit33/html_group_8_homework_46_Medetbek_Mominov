@@ -3,8 +3,9 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
 var data = require('gulp-data');
+var prettify = require('gulp-html-prettify');
 
-gulp.task('styles', function(){
+gulp.task('styles', function(){ 
 	gulp.src('app/sass/style.sass')
 	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 	.pipe(prefix())
@@ -17,6 +18,7 @@ gulp.task('views', function(){
 		return require('./app/templates/data/data.json')
 	}))
 	.pipe(pug())
+	.pipe(prettify())
 	.pipe(gulp.dest('app/'))
 });
 

@@ -4,7 +4,8 @@
 		{
 			"title": "Kids Moon Colorblock Footed Tights",
 			"image": "saikal",
-			"price": "8.99"
+			"price": "8.99",
+			"tags": ["hot"]
 		},
 		{
 			"title": "Serax Fibrepots",
@@ -63,5 +64,16 @@
 			"image": "Alexandra",
 			"price": "8.99"
 		}
+	],
+	"menu__items": [
+		"Man",
+		"Women",
+		"Fashion 2013",
+		"Kids",
+		"Jeans",
+		"Tshirt",
+		"Top Fasion",
+		"Summber collection",
+		"Special Offer"
 	]
 }
